@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="conceptos de html5 y css3" />
+    <meta name="author" content="Rocio Toscano" />
+    <meta
+      name="keywords"
+      content="html5, listas, botones, formularios, tablas"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Mi primer web</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html">Inicio</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="elementos.html">Elementos</a>
+        <a href="position.html">Position</a>
+        <a href="https://www.google.com/" target="_blank">Pagina externa</a>
+      </nav>
+    </header>
+    <main>
+      <div class="titulo">
+        <h1 id="tituloPrincipal">Mi primera web</h1>
+        <p>Comenzamos nuestra primer pagina utilizando <b>HTML5 y CSS3</b></p>
+      </div>
+      <section class="contenedor">
+        <h2 class="subtitulo">Formulario de contacto</h2>
+        <div class="rectangulo">
+          <form>
+            <div class="renglon">
+              <label for="nombre">Nombre y apellido*</label>
+              <input
+                type="text"
+                id="nombre"
+                placeholder="Juan Perez"
+                required
+              />
+            </div>
+            <div class="renglon">
+              <label for="email">Email*</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="juanperez@gmail.com"
+                required
+              />
+            </div>
+            <div class="renglon">
+              <label for="consulta">Consulta</label>
+              <textarea
+                id="consulta"
+                rows="5"
+                placeholder="Ingrese su consulta"
+                required
+              ></textarea>
+            </div>
+            <div class="renglon">
+              <label>Como nos conociste:</label>
+              <select>
+                <option value="">Seleccione una opcion</option>
+                <option value="">Instagram</option>
+                <option value="">Facebook</option>
+                <option value="">Diarios</option>
+                <option value="">Otros</option>
+              </select>
+            </div>
+            <div>
+              <p>Tiene conocimientos previos de programacion</p>
+              <div>
+                <input type="radio" id="opcionSi" name="grupo" />
+                <label for="opcionSi">Si</label>
+                <input type="radio" id="opcionNo" name="grupo" />
+                <label for="opcionNo">No</label>
+              </div>
+            </div>
+            <div>
+              <p>Seleccione el lenguaje que conoce:</p>
+              <div>
+                <input type="checkbox" />
+                <label>Javascript</label>
+                <input type="checkbox" />
+                <label>Java</label>
+                <input type="checkbox" />
+                <label>c#</label>
+                <input type="checkbox" />
+                <label>PHP</label>
+              </div>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>

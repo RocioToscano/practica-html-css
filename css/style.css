@@ -1,0 +1,163 @@
+/* esto es un comentario */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* selector de etiqueta */
+nav{
+    background: #333;
+    padding: 25px 5px;
+    position: fixed;
+    width: 100%;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0px 5px;
+    padding: 0px 5px;
+}
+
+nav a:hover{
+    background: tomato;
+    padding: 15px 5px;
+}
+
+/* selector de clase */
+.contenedor{
+    margin: 30px;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 30px ;
+    text-align: center;
+}
+
+.titulo{
+    background: rgb(88, 126, 187);
+    padding: 90px 0px 50px 0px;
+    color: white;
+    text-align: center;
+}
+
+.imagenCentrada{
+    text-align: center;
+}
+
+/* selector de ID */
+#tituloPrincipal{
+    color: rgb(100, 17, 179);
+} 
+
+ul, ol{
+    list-style-position: inside;
+}
+
+hr{
+    margin: 10px 0px;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+}
+
+#azul{
+    background: blue;
+    position: relative;
+    left: 60px;
+    top: 40px;
+    z-index: -1;
+}
+
+#roja{
+    background: red;
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+
+#amarilla{
+    background: yellow;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.contenedorPrincipal{
+    border: 1px solid red;
+    position: relative;
+}
+
+.rectangulo{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+}
+
+#tituloSticky{
+    background: yellow;
+    position: sticky;
+    top: 40px;
+    z-index: -1;
+}
+
+td, th, table{
+    border: 1px solid grey;
+}
+
+/* elementos impares = odd */
+/* elementos pares = even */
+tr:nth-child(even){
+    background: rgba(58, 58, 161, 0.452);
+}
+
+.contenedorFlexible{
+    /* border: 2px solid rgb(11, 155, 3); */
+    display: flex;
+    margin-bottom: 15px;
+}
+
+form{
+    border: 1px solid grey;
+    width: 70%;
+    padding: 10px;
+}
+
+.renglon{
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+}
+
+.renglon label{
+    margin: 10px 0px;
+}
+
+button{
+    margin: 15px 0px;
+    width: 100%;
+    background: rgb(47, 47, 199);
+    border: 0;
+    padding: 5px 0px;
+    color: white;
+    box-shadow: 4px 4px 4px rgb(27, 25, 25);
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.formCentrado{
+    justify-content: center;
+}
